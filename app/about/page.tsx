@@ -14,7 +14,7 @@ export default function AboutPage() {
             <h1 className="text-5xl md:text-6xl lg:text-[72px] font-headline font-semibold text-gray-900 dark:text-gray-50 leading-[1.1] tracking-tight">
               Designing data- <br />
               informed stories <br />
-              with a <span className="italic text-[#e9c766]">human pulse.</span>
+              with a <span className="italic text-[#cf9a17] dark:text-[#f4c844]">human pulse.</span>
             </h1>
             <p className="text-lg md:text-xl text-gray-600 dark:text-gray-300 max-w-lg font-light leading-relaxed">
               I am Gurusha Arora, a multidisciplinary designer focused on creating high-end gallery-like digital experiences. My approach balances the authority of a boutique agency with the intimacy of a solo practitioner.

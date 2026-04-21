@@ -1,4 +1,7 @@
 @import "tailwindcss";
+@source "../components/**/*.{js,ts,jsx,tsx}";
+@source "../app/**/*.{js,ts,jsx,tsx}";
+
 @custom-variant dark (&:is(.dark, .dark *));
 @theme {
   --color-surface-container-low: #f2f4f7;
@@ -49,14 +52,15 @@
   --color-on-secondary-fixed-variant: #58440c;
   --color-on-primary-fixed-variant: #594400;
 
-  --font-headline: var(--font-headline), serif;
-  --font-body: var(--font-body), sans-serif;
-  --font-label: var(--font-body), sans-serif;
+  --font-headline: var(--font-headline);
+  --font-body: var(--font-body);
+  --font-label: var(--font-body);
 
   --animate-reveal-text: revealText 1.2s cubic-bezier(0.77, 0, 0.175, 1) forwards;
   --animate-fade-up: fadeUp 0.8s ease-out forwards;
   --animate-page-in: pageFadeIn 0.7s cubic-bezier(0.16, 1, 0.3, 1) forwards;
 }
+
 
 @keyframes revealText {
   0% { transform: translateY(100%); opacity: 0; }
