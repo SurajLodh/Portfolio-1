@@ -44,7 +44,7 @@ const workData = [
 export default function Work() {
   return (
     <main className="py-24 bg-[#f8f9fa] dark:bg-[#0b1221] transition-colors duration-300" id="work">
-      <div className="max-w-7xl mx-auto px-8">
+      <div className="max-w-7xl mx-auto px-4 md:px-8">
         <div className="mb-20">
           <h2 className="text-4xl md:text-5xl font-headline font-bold text-gray-900 dark:text-gray-100 border-b-[5px] border-[#e9c766] dark:border-[#f4c844] inline-block pb-1 transition-colors">
             Work

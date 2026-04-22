@@ -4,7 +4,7 @@ import Link from 'next/link';
 export default function Contacts() {
   return (
     <footer className="w-full bg-[#f8f9fa] dark:bg-[#0b1221] transition-colors duration-300 mt-auto pb-10" id="contacts">
-      <div className="flex flex-col md:flex-row justify-between items-center max-w-7xl mx-auto px-8 py-16 gap-10">
+      <div className="flex flex-col md:flex-row justify-between items-center max-w-7xl mx-auto px-4 md:px-8 py-16 gap-10">
         <div className="space-y-4 text-center md:text-left">
           <div className="text-lg font-headline font-bold text-gray-900 dark:text-gray-100 transition-colors">Gurusha Arora</div>
           <p className="text-gray-500 dark:text-gray-400 max-w-xs font-light text-sm leading-relaxed transition-colors">Available for new opportunities in Product Design and UX Research.</p>
@@ -19,7 +19,7 @@ export default function Contacts() {
           </div>
         </div>
       </div>
-      <div className="max-w-7xl mx-auto px-8 flex flex-col md:flex-row justify-between items-center gap-4 text-[10px] uppercase tracking-widest text-gray-400 dark:text-gray-500 pt-8 border-t border-gray-200 dark:border-gray-800 transition-colors">
+      <div className="max-w-7xl mx-auto px-4 md:px-8 flex flex-col md:flex-row justify-between items-center gap-4 text-[10px] uppercase tracking-widest text-gray-400 dark:text-gray-500 pt-8 border-t border-gray-200 dark:border-gray-800 transition-colors">
         <span>GURUSHA ARORA {new Date().getFullYear()}</span>
         <span>CURATED WITH INTENTION</span>
       </div>

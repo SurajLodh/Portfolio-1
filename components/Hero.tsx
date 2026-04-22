@@ -11,7 +11,7 @@ export default function Hero() {
 
   return (
     <header className="relative py-2 md:py-4 overflow-hidden bg-white dark:bg-[#0f172a] transition-colors duration-300 flex items-center min-h-[calc(100vh-6rem)]" id="about">
-      <div className="max-w-7xl mx-auto px-8 flex flex-col md:flex-row items-center gap-8 lg:gap-12 w-full">
+      <div className="max-w-7xl mx-auto px-4 md:px-8 flex flex-col md:flex-row items-center gap-8 lg:gap-12 w-full">
         <div className="flex-1 space-y-5 z-10 w-full mt-4 md:mt-0">
           <div className="inline-block px-4 py-1.5 rounded-full bg-[#fcf1c5] dark:bg-[#403310] text-[#8e6e14] dark:text-[#f4c844] font-bold text-[10px] tracking-widest uppercase transition-colors">
             UI/UX DESIGNER
