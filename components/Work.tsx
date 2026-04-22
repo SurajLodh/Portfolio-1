@@ -59,26 +59,26 @@ export default function Work() {
             >
               <div className="flex-1 space-y-5">
                 <div className="flex items-center gap-4 text-[9px] uppercase tracking-wider text-gray-400 dark:text-gray-500 transition-colors">
-                  <span className="font-bold border border-gray-200 dark:border-gray-700 px-3 py-1 rounded bg-white dark:bg-gray-800 text-gray-600 dark:text-gray-300 transition-colors duration-300 group-hover:border-[#e9c766] group-hover:text-[#b08210] dark:group-hover:border-[#f4c844] dark:group-hover:text-[#f4c844]">{project.role}</span>
+                  <span className="font-bold border border-gray-200 dark:border-gray-700 px-3 py-1 rounded bg-white dark:bg-gray-800 text-gray-600 dark:text-gray-300 transition-colors duration-300 group-hover:border-[#e9c766] group-hover:text-[#b08210] dark:group-hover:border-[#f4c844] dark:group-hover:text-[#f4c844] group-active:border-[#e9c766] group-active:text-[#b08210] dark:group-active:border-[#f4c844] dark:group-active:text-[#f4c844]">{project.role}</span>
                   <span className="font-semibold">{project.date}</span>
                 </div>
-                <h3 className="text-3xl font-headline font-bold text-gray-900 dark:text-gray-100 transition-colors duration-300 group-hover:text-[#b08210] dark:group-hover:text-[#f4c844]">{project.title}</h3>
+                <h3 className="text-3xl font-headline font-bold text-gray-900 dark:text-gray-100 transition-colors duration-300 group-hover:text-[#b08210] dark:group-hover:text-[#f4c844] group-active:text-[#b08210] dark:group-active:text-[#f4c844]">{project.title}</h3>
                 <p className="text-[15px] font-body text-gray-600 dark:text-gray-400 leading-relaxed font-light transition-colors">
                   {project.description}
                 </p>
                 <div className="pt-2">
                   <Link href={project.id === 'ani-news' ? '/work/ani-news' : ''}>
-                    <button className="px-6 py-2.5 border border-gray-300 dark:border-gray-700 bg-[#f8f9fa] dark:bg-gray-800 text-gray-700 dark:text-gray-200 font-medium rounded transition-colors text-sm shadow-sm group-hover:bg-[#111827] group-hover:text-white group-hover:border-[#111827] dark:group-hover:bg-white dark:group-hover:text-gray-900 dark:group-hover:border-white duration-300">
+                    <button className="px-6 py-2.5 border border-gray-300 dark:border-gray-700 bg-[#f8f9fa] dark:bg-gray-800 text-gray-700 dark:text-gray-200 font-medium rounded transition-all text-sm shadow-sm group-hover:bg-[#111827] group-hover:text-white group-hover:border-[#111827] dark:group-hover:bg-white dark:group-hover:text-gray-900 dark:group-hover:border-white group-active:bg-[#111827] group-active:text-white group-active:border-[#111827] dark:group-active:bg-white dark:group-active:text-gray-900 dark:group-active:border-white active:scale-95 duration-300">
                       View Project
                     </button>
                   </Link>
                 </div>
               </div>
-              <div className="flex-1 w-full rounded-[24px] shadow-xl bg-white dark:bg-[#0f172a] p-2 transition-all duration-500 group-hover:-translate-y-3 group-hover:shadow-[0_20px_40px_-10px_rgba(0,0,0,0.15)] dark:group-hover:shadow-[0_20px_40px_-10px_rgba(0,0,0,0.5)] border border-gray-100 dark:border-gray-800">
+              <div className="flex-1 w-full rounded-[24px] shadow-xl bg-white dark:bg-[#0f172a] p-2 transition-all duration-500 group-hover:-translate-y-3 group-hover:shadow-[0_20px_40px_-10px_rgba(0,0,0,0.15)] dark:group-hover:shadow-[0_20px_40px_-10px_rgba(0,0,0,0.5)] group-active:-translate-y-3 group-active:shadow-[0_20px_40px_-10px_rgba(0,0,0,0.15)] dark:group-active:shadow-[0_20px_40px_-10px_rgba(0,0,0,0.5)] border border-gray-100 dark:border-gray-800">
                 <div className="w-full h-full rounded-[16px] overflow-hidden bg-gray-100 dark:bg-gray-800">
                   <img
                     alt={project.title}
-                    className="w-full h-auto object-cover transition-transform duration-700 group-hover:scale-[1.03]"
+                    className="w-full h-auto object-cover transition-transform duration-700 group-hover:scale-[1.03] group-active:scale-[1.03]"
                     src={project.image}
                   />
                 </div>

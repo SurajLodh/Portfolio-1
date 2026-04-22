@@ -31,7 +31,7 @@ export default function WorkPage() {
               className={`px-5 py-2 rounded-full text-xs font-bold uppercase tracking-widest cursor-pointer transition-colors ${
                 selectedCategory === category
                   ? 'bg-[#f0b92f] text-gray-900 dark:text-gray-50 shadow-sm'
-                  : 'bg-[#f1f5f9] dark:bg-gray-800 text-gray-500 dark:text-gray-400 hover:bg-gray-200'
+                  : 'bg-[#f1f5f9] dark:bg-gray-800 text-gray-500 dark:text-gray-400 hover:bg-gray-200 active:bg-gray-200 active:scale-95'
               }`}
             >
               {category}
@@ -43,11 +43,11 @@ export default function WorkPage() {
       <div className="max-w-7xl mx-auto px-4 md:px-8 space-y-24 lg:space-y-32 mt-12">
         
         {/* Project 1 - ANI News */}
-        <div className="flex flex-col md:flex-row gap-12 lg:gap-20 items-center">
-          <div className="flex-1 w-full relative h-[300px] md:h-[450px]">
+        <div className="group flex flex-col md:flex-row gap-12 lg:gap-20 items-center cursor-pointer">
+          <div className="flex-1 w-full relative h-[300px] md:h-[450px] overflow-hidden rounded-[2rem] shadow-xl group-hover:shadow-2xl group-active:shadow-2xl transition-all duration-500">
             <img 
                src="https://images.unsplash.com/photo-1524661135-423995f22d0b?q=80&w=2074&auto=format&fit=crop" 
-               className="w-full h-full object-cover rounded-[2rem] shadow-xl"
+               className="w-full h-full object-cover rounded-[2rem] group-hover:scale-105 group-active:scale-105 transition-transform duration-700"
                alt="ANI News"
             />
           </div>
@@ -55,14 +55,14 @@ export default function WorkPage() {
             <div className="text-[10px] text-gray-400 uppercase tracking-widest font-bold">
               PRODUCT DESIGNER <span className="mx-2 font-normal text-gray-300"></span> FEB 2026
             </div>
-            <h2 className="text-4xl lg:text-5xl font-headline font-bold text-gray-900 dark:text-gray-50 tracking-tight">
+            <h2 className="text-4xl lg:text-5xl font-headline font-bold text-gray-900 dark:text-gray-50 tracking-tight group-hover:text-[#b08210] group-active:text-[#b08210] dark:group-hover:text-[#f4c844] dark:group-active:text-[#f4c844] transition-colors duration-300">
               ANI News  Platform Redesign
             </h2>
             <p className="text-gray-500 dark:text-gray-400 font-light leading-relaxed text-lg">
               Orchestrating a future-ready news consumption experience, balancing high-density information with cinematic editorial breathing room.
             </p>
             <div className="pt-4">
-              <Link href="/work/ani-news" className="inline-flex items-center gap-2 text-[11px] font-bold uppercase tracking-widest text-gray-900 dark:text-gray-50 hover:text-[#b08210] dark:text-[#f4c844] transition-colors border-b border-transparent hover:border-[#b08210] pb-1">
+              <Link href="/work/ani-news" className="inline-flex items-center gap-2 text-[11px] font-bold uppercase tracking-widest text-gray-900 dark:text-gray-50 group-hover:text-[#b08210] group-active:text-[#b08210] dark:group-hover:text-[#f4c844] dark:group-active:text-[#f4c844] transition-colors border-b border-transparent group-hover:border-[#b08210] group-active:border-[#b08210] dark:group-hover:border-[#f4c844] pb-1">
                 VIEW CASE STUDY <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
               </Link>
             </div>
@@ -73,19 +73,19 @@ export default function WorkPage() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-16 lg:gap-20">
           
           {/* ShriConnect */}
-          <div className="space-y-6 group cursor-pointer transition-all duration-500 hover:-translate-y-2">
-            <div className="w-full h-[300px] lg:h-[400px] overflow-hidden rounded-[2rem] shadow-xl group-hover:shadow-2xl transition-all duration-500">
+          <div className="space-y-6 group cursor-pointer transition-all duration-500 hover:-translate-y-2 active:-translate-y-2">
+            <div className="w-full h-[300px] lg:h-[400px] overflow-hidden rounded-[2rem] shadow-xl group-hover:shadow-2xl group-active:shadow-2xl transition-all duration-500">
               <img 
                 src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=2070&auto=format&fit=crop" 
                 alt="ShriConnect" 
-                className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" 
+                className="w-full h-full object-cover group-hover:scale-105 group-active:scale-105 transition-transform duration-700" 
               />
             </div>
             <div className="space-y-3">
               <div className="text-[9px] text-gray-400 uppercase tracking-widest font-bold">
                 LEAD DESIGNER <span className="mx-2 font-normal text-gray-300"></span> JUL 2024
               </div>
-              <h3 className="text-2xl font-headline font-bold text-gray-900 dark:text-gray-50 group-hover:text-[#b08210] dark:text-[#f4c844] transition-colors duration-300">ShriConnect  ERP Ecosystem</h3>
+              <h3 className="text-2xl font-headline font-bold text-gray-900 dark:text-gray-50 group-hover:text-[#b08210] group-active:text-[#b08210] dark:group-hover:text-[#f4c844] dark:group-active:text-[#f4c844] transition-colors duration-300">ShriConnect  ERP Ecosystem</h3>
               <p className="text-sm text-gray-500 dark:text-gray-400 font-light leading-relaxed pr-4">
                 Systematizing complex educational workflows into a cohesive, human-centered digital infrastructure.
               </p>
@@ -93,19 +93,19 @@ export default function WorkPage() {
           </div>
 
           {/* Wave City */}
-          <div className="space-y-6 group cursor-pointer transition-all duration-500 hover:-translate-y-2">
-            <div className="w-full h-[300px] lg:h-[400px] overflow-hidden rounded-[2rem] shadow-xl group-hover:shadow-2xl transition-all duration-500">
+          <div className="space-y-6 group cursor-pointer transition-all duration-500 hover:-translate-y-2 active:-translate-y-2">
+            <div className="w-full h-[300px] lg:h-[400px] overflow-hidden rounded-[2rem] shadow-xl group-hover:shadow-2xl group-active:shadow-2xl transition-all duration-500">
               <img 
                 src="https://images.unsplash.com/photo-1550745165-9bc0b252726f?q=80&w=2070&auto=format&fit=crop" 
                 alt="Wave City" 
-                className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" 
+                className="w-full h-full object-cover group-hover:scale-105 group-active:scale-105 transition-transform duration-700" 
               />
             </div>
             <div className="space-y-3">
               <div className="text-[9px] text-gray-400 uppercase tracking-widest font-bold">
                 UX COLLABORATOR <span className="mx-2 font-normal text-gray-300"></span> SEP 2024
               </div>
-              <h3 className="text-2xl font-headline font-bold text-gray-900 dark:text-gray-50 group-hover:text-[#b08210] dark:text-[#f4c844] transition-colors duration-300">Wave City  ERP & Billing Workflow</h3>
+              <h3 className="text-2xl font-headline font-bold text-gray-900 dark:text-gray-50 group-hover:text-[#b08210] group-active:text-[#b08210] dark:group-hover:text-[#f4c844] dark:group-active:text-[#f4c844] transition-colors duration-300">Wave City  ERP & Billing Workflow</h3>
               <p className="text-sm text-gray-500 dark:text-gray-400 font-light leading-relaxed pr-4">
                 Streamlining financial transparency through intuitive data architecture and billing automation.
               </p>
@@ -115,12 +115,12 @@ export default function WorkPage() {
         </div>
 
         {/* Project 4 - Full Width Card */}
-        <div className="bg-[#f8f9fa] dark:bg-gray-900 rounded-[3rem] p-8 md:p-16 lg:p-20 flex flex-col-reverse md:flex-row items-center gap-12 lg:gap-20 shadow-sm border border-gray-100 dark:border-gray-800 group cursor-pointer hover:shadow-xl hover:-translate-y-2 transition-all duration-500">
+        <div className="bg-[#f8f9fa] dark:bg-gray-900 rounded-[3rem] p-8 md:p-16 lg:p-20 flex flex-col-reverse md:flex-row items-center gap-12 lg:gap-20 shadow-sm border border-gray-100 dark:border-gray-800 group cursor-pointer hover:shadow-xl active:shadow-xl hover:-translate-y-2 active:-translate-y-1 transition-all duration-500">
           <div className="flex-1 space-y-6">
-            <div className="inline-block px-4 py-1.5 bg-white dark:bg-gray-800 text-[9px] uppercase tracking-widest font-bold text-[#b08210] dark:text-[#f4c844] rounded shadow-sm border border-gray-100 dark:border-gray-800 group-hover:scale-105 transition-transform duration-300">
+            <div className="inline-block px-4 py-1.5 bg-white dark:bg-gray-800 text-[9px] uppercase tracking-widest font-bold text-[#b08210] dark:text-[#f4c844] rounded shadow-sm border border-gray-100 dark:border-gray-800 group-hover:scale-105 group-active:scale-105 transition-transform duration-300">
               ACCESSIBILITY FIRST
             </div>
-            <h2 className="text-4xl font-headline font-bold text-gray-900 dark:text-gray-50 tracking-tight group-hover:text-[#b08210] dark:text-[#f4c844] transition-colors duration-300">Ability Connect</h2>
+            <h2 className="text-4xl font-headline font-bold text-gray-900 dark:text-gray-50 tracking-tight group-hover:text-[#b08210] group-active:text-[#b08210] dark:group-hover:text-[#f4c844] dark:group-active:text-[#f4c844] transition-colors duration-300">Ability Connect</h2>
             <p className="text-gray-500 dark:text-gray-400 font-light leading-relaxed text-lg max-w-md">
               Designing for the edge cases. A platform built with WCAG 2.1 compliance at its core, ensuring seamless navigation for users of all abilities.
             </p>
@@ -138,7 +138,7 @@ export default function WorkPage() {
           <div className="flex-1 w-full relative h-[300px] md:h-[400px] overflow-hidden rounded-[2rem] shadow-lg">
              <img 
                src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2070&auto=format&fit=crop" 
-               className="w-full h-full object-cover grayscale opacity-90 group-hover:grayscale-0 group-hover:scale-105 group-hover:opacity-100 transition-all duration-700" 
+               className="w-full h-full object-cover grayscale opacity-90 group-hover:grayscale-0 group-active:grayscale-0 group-hover:scale-105 group-active:scale-105 group-hover:opacity-100 group-active:opacity-100 transition-all duration-700" 
                alt="Ability Connect"
              />
           </div>

@@ -81,7 +81,7 @@ function MobileMenu({ pathname }: { pathname: string }) {
     `block w-full text-left px-4 py-3 rounded-lg font-label text-sm uppercase tracking-widest font-medium transition-all ${
       active
         ? 'bg-[#fef9ec] dark:bg-[#403310] text-[#b08210] dark:text-[#f4c844]'
-        : 'text-[#64748b] dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800'
+        : 'text-[#64748b] dark:text-gray-300 hover:bg-gray-100 active:bg-gray-100 dark:hover:bg-gray-800 dark:active:bg-gray-800'
     }`;
 
   return (
@@ -121,7 +121,7 @@ function MobileMenu({ pathname }: { pathname: string }) {
               <a
                 href="mailto:gurushaa11@gmail.com"
                 onClick={() => setOpen(false)}
-                className="block w-full text-center px-4 py-3 bg-gradient-to-r from-[#987624] to-[#f4c844] text-[#1a1500] font-bold text-sm rounded-lg hover:opacity-90 transition-opacity"
+                className="block w-full text-center px-4 py-3 bg-gradient-to-r from-[#987624] to-[#f4c844] text-[#1a1500] font-bold text-sm rounded-lg hover:opacity-90 active:opacity-75 active:scale-95 transition-all"
               >
                 Hire Me
               </a>

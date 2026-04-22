@@ -33,8 +33,8 @@ export default function RootLayout({
       data-scroll-behavior="smooth"
       suppressHydrationWarning
     >
-      <body className="bg-background text-on-surface font-body selection:bg-primary-container selection:text-on-primary-container min-h-full flex flex-col pt-24 overflow-x-hidden transition-colors duration-300 w-full relative max-w-[100vw]">
-        <ThemeWrapper attribute="class" defaultTheme="system" enableSystem disableTransitionOnChange>
+      <body className="bg-background text-on-surface font-body selection:bg-primary-container selection:text-on-primary-container min-h-full flex flex-col pt-24 overflow-x-hidden transition-colors duration-300 w-full relative max-w-[100vw]" suppressHydrationWarning>
+        <ThemeWrapper attribute="class" defaultTheme="light" enableSystem disableTransitionOnChange>
           <ScrollToTop />
           <NavBar />
           <main className="flex-1 flex flex-col w-full">
