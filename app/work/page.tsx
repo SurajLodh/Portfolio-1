@@ -11,7 +11,7 @@ export default function WorkPage() {
     <div className="bg-[#fcfcfc] dark:bg-[#0f172a] transition-colors duration-300 w-full min-h-screen pb-20 text-gray-900 dark:text-gray-50">
       
       {/* Header Area */}
-      <div className="max-w-7xl mx-auto px-8 pt-0 lg:pt-6 pb-12">
+      <div className="max-w-7xl mx-auto px-4 md:px-8 pt-0 lg:pt-6 pb-12">
         <div className="text-[10px] uppercase font-bold text-[#b08210] dark:text-[#f4c844] tracking-[0.2em] mb-4 font-label">
           PORTFOLIO 2024
         </div>
@@ -40,7 +40,7 @@ export default function WorkPage() {
         </div>
       </div>
 
-      <div className="max-w-7xl mx-auto px-8 space-y-24 lg:space-y-32 mt-12">
+      <div className="max-w-7xl mx-auto px-4 md:px-8 space-y-24 lg:space-y-32 mt-12">
         
         {/* Project 1 - ANI News */}
         <div className="flex flex-col md:flex-row gap-12 lg:gap-20 items-center">
@@ -115,7 +115,7 @@ export default function WorkPage() {
         </div>
 
         {/* Project 4 - Full Width Card */}
-        <div className="bg-[#f8f9fa] dark:bg-gray-900 rounded-[3rem] p-10 md:p-16 lg:p-20 flex flex-col-reverse md:flex-row items-center gap-12 lg:gap-20 shadow-sm border border-gray-100 dark:border-gray-800 group cursor-pointer hover:shadow-xl hover:-translate-y-2 transition-all duration-500">
+        <div className="bg-[#f8f9fa] dark:bg-gray-900 rounded-[3rem] p-8 md:p-16 lg:p-20 flex flex-col-reverse md:flex-row items-center gap-12 lg:gap-20 shadow-sm border border-gray-100 dark:border-gray-800 group cursor-pointer hover:shadow-xl hover:-translate-y-2 transition-all duration-500">
           <div className="flex-1 space-y-6">
             <div className="inline-block px-4 py-1.5 bg-white dark:bg-gray-800 text-[9px] uppercase tracking-widest font-bold text-[#b08210] dark:text-[#f4c844] rounded shadow-sm border border-gray-100 dark:border-gray-800 group-hover:scale-105 transition-transform duration-300">
               ACCESSIBILITY FIRST
@@ -145,7 +145,7 @@ export default function WorkPage() {
         </div>
 
         {/* Bottom CTA */}
-        <div className="bg-[#7a5c10] rounded-[3rem] p-16 md:p-24 text-center mt-32 relative overflow-hidden shadow-2xl">
+        <div className="bg-[#7a5c10] rounded-[3rem] p-8 md:p-16 lg:p-24 text-center mt-32 relative overflow-hidden shadow-2xl">
           <div className="absolute top-0 right-0 w-64 h-64 bg-[#b08210] rounded-full blur-3xl opacity-50 -translate-y-1/2 translate-x-1/4"></div>
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-headline font-bold text-white mb-10 max-w-2xl mx-auto leading-tight relative z-10 text-balance">
             Ready to start a <br/> new project?
