@@ -2,6 +2,7 @@
 
 import React from 'react';
 import Link from 'next/link';
+import { motion } from 'framer-motion';
 const workData = [
   {
     id: 'ani-news',
@@ -52,12 +53,24 @@ export default function Work() {
         </div>
 
         <div className="space-y-32">
-          {workData.map((project) => (
-            <section
+          {workData.map((project, index) => (
+            <motion.div
               key={project.id}
-              className={`group flex flex-col ${project.reverse ? 'md:flex-row-reverse' : 'md:flex-row'} items-center gap-12 lg:gap-24 cursor-pointer`}
+              initial={{ opacity: 0, y: 40 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, margin: "-100px" }}
+              transition={{ 
+                type: "spring", 
+                damping: 40, 
+                stiffness: 300, 
+                mass: 1,
+                delay: index * 0.1 
+              }}
             >
-              <div className="flex-1 space-y-5">
+              <section
+                className={`group flex flex-col ${project.reverse ? 'md:flex-row-reverse' : 'md:flex-row'} items-center gap-12 lg:gap-24 cursor-pointer`}
+              >
+                <div className="flex-1 space-y-5">
                 <div className="flex items-center gap-4 text-[9px] uppercase tracking-wider text-gray-400 dark:text-gray-500 transition-colors">
                   <span className="font-bold border border-gray-200 dark:border-gray-700 px-3 py-1 rounded bg-white dark:bg-gray-800 text-gray-600 dark:text-gray-300 transition-colors duration-300 group-hover:border-[#e9c766] group-hover:text-[#b08210] dark:group-hover:border-[#f4c844] dark:group-hover:text-[#f4c844] group-active:border-[#e9c766] group-active:text-[#b08210] dark:group-active:border-[#f4c844] dark:group-active:text-[#f4c844]">{project.role}</span>
                   <span className="font-semibold">{project.date}</span>
@@ -84,6 +97,7 @@ export default function Work() {
                 </div>
               </div>
             </section>
+          </motion.div>
           ))}
         </div>
       </div>

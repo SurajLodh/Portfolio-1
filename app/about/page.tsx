@@ -94,7 +94,7 @@ export default function AboutPage() {
               {[
                 { tool: "Figma & FigJam", role: "VISUAL MASTER" },
                 { tool: "Adobe Creative Suite", role: "ASSET CREATION" },
-                { tool: "Webflow & Tailwind", role: "IMPLEMENTATION" },
+                { tool: "AI Agent", role: "IMPLEMENTATION" },
                 { tool: "Notion & Jira", role: "STRATEGY & OPS" }
               ].map((item, i) => (
                 <div key={i} className="flex justify-between items-center border-b border-gray-100 dark:border-gray-800 pb-4">
